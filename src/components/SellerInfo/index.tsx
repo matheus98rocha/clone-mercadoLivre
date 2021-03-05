@@ -1,6 +1,17 @@
 import React from 'react';
 
-import { Container } from './styles';
+import {
+  Container,
+  Title,
+  LocationCard,
+  LocationIcon,
+  ReputationCard,
+  ReputationRow,
+  ReputationThermometer,
+  SupportIcon,
+  ClockIcon,
+  More,
+} from './styles';
 
 const SellerInfo: React.FC = () => {
   return (
@@ -32,21 +43,21 @@ const SellerInfo: React.FC = () => {
 
           <div>
             <strong>
-              <SupportIcon>
-              </strong>
-              <span>presta um bom atendimento</span>
+              <SupportIcon />
+            </strong>
+            <span>presta um bom atendimento</span>
           </div>
 
-            <div>
-              <strong>
-                <ClockIcon />
-              </strong>
-              <span>vendas nos últimos 4 meses</span>
-            </div>
+          <div>
+            <strong>
+              <ClockIcon />
+            </strong>
+            <span>vendas nos últimos 4 meses</span>
+          </div>
         </ReputationRow>
       </ReputationCard>
 
-        <More href="#">Ver mais informações do vendedor</More>
+      <More href="#">Ver mais informações do vendedor</More>
     </Container>
   );
 };
